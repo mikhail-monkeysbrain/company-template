@@ -2,6 +2,15 @@
   width 100%
   background $darkborder
   margin-top 8rem
+
+  .tablet &,
+  .mobile &
+    margin-top 6rem
+
+    .tag
+      position relative
+      top -0.8rem
+
   &--wrapper
     display flex
     max-width 117rem
@@ -26,6 +35,7 @@
 
     .tablet &
       width 27rem
+      margin-right 3rem
 
     &--description
       font-size: 1.4rem
@@ -33,4 +43,5 @@
 
       .mobile &
         font-size 2.2rem
-        margin-top 1.8rem
+        margin-top 0
+        line-height 3rem

@@ -20,6 +20,7 @@ header
   .tablet &
     justify-content space-between
     width 69rem
+    padding 2.1rem 0 1.8rem
 
   .mobile &
     justify-content space-between
@@ -155,8 +156,16 @@ header
 
     .tablet &,
     .mobile &
-      left -2rem
+      left -2.5rem
       position relative
+
+    .mobile &
+      left -1.2rem
+      top -0.4rem
+
+      .popup__toggle
+        top -2.8rem
+        left -1.3rem
 
       i
         font-size 2rem
@@ -218,9 +227,11 @@ header
   width 5rem
   height 2.5rem
   position relative
-  transform scale(.6)
+  transform scale(.65)
   display none
   z-index 3
+  left 1.1rem
+  top -0.5rem
 
   .tablet &,
   .mobile &

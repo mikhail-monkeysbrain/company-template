@@ -1395,6 +1395,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 69rem;
+  padding: 2.1rem 0 1.8rem;
 }
 .mobile .header {
   -webkit-box-pack: justify;
@@ -1591,10 +1592,17 @@ header {
 }
 .tablet .header--phone,
 .mobile .header--phone {
-  left: -2rem;
+  left: -2.5rem;
   position: relative;
 }
-.tablet .header--phone i,
+.mobile .header--phone {
+  left: -1.2rem;
+  top: -0.4rem;
+}
+.mobile .header--phone .popup__toggle {
+  top: -2.8rem;
+  left: -1.3rem;
+}
 .mobile .header--phone i {
   font-size: 2rem;
 }
@@ -1661,11 +1669,13 @@ header {
   width: 5rem;
   height: 2.5rem;
   position: relative;
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6);
+  -webkit-transform: scale(0.65);
+      -ms-transform: scale(0.65);
+          transform: scale(0.65);
   display: none;
   z-index: 3;
+  left: 1.1rem;
+  top: -0.5rem;
 }
 .tablet .burger,
 .mobile .burger {
@@ -1733,6 +1743,8 @@ header {
 }
 .tablet .footer {
   width: 69rem;
+  padding-top: 3.3rem;
+  padding-bottom: 0;
 }
 .mobile .footer {
   -webkit-box-orient: vertical;
@@ -1740,6 +1752,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 51rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3.6rem;
 }
 .footer--left {
   width: 21rem;
@@ -1761,6 +1775,11 @@ header {
           align-items: center;
   margin-bottom: 4rem;
   margin-left: 0.8rem;
+}
+.tablet .footer--social,
+.mobile .footer--social {
+  margin-left: 0;
+  margin-bottom: 2.7rem;
 }
 .footer--social i {
   color: #893b67;
@@ -1792,6 +1811,10 @@ header {
   line-height: 1.8rem;
   margin-bottom: 1.7rem;
 }
+.tablet .footer--address,
+.mobile .footer--address {
+  margin-top: 1.5rem;
+}
 .footer--address__detail {
   color: #414141;
   font-size: 1.4rem;
@@ -1801,11 +1824,16 @@ header {
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
+.tablet .footer--address__link,
+.mobile .footer--address__link {
+  line-height: 5.5rem;
+  font-size: 1.6rem;
+}
 .footer--nav {
   width: 87rem;
 }
 .tablet .footer--nav {
-  width: calc(100% - 35rem);
+  width: calc(100% - 30rem);
 }
 .mobile .footer--nav {
   width: 100%;
@@ -1818,6 +1846,8 @@ header {
 }
 .mobile .footer--nav--heading .ac--arrow i {
   border: 0;
+  font-size: 2rem;
+  margin-top: 1.1rem;
 }
 .footer--nav--heading .faq__heading {
   font-size: 1.4rem;
@@ -1825,7 +1855,7 @@ header {
 .footer--nav .accordeon .answer {
   display: block;
   padding-top: 0.7rem;
-  line-height: 1.8;
+  line-height: 2.4rem;
 }
 .mobile .footer--nav .accordeon .answer {
   display: none;
@@ -1841,9 +1871,12 @@ header {
 }
 .tablet .footer--nav .accordeon .ac {
   width: 17rem;
+  padding-top: 0;
+  padding-bottom: 4rem;
+  margin-right: 1rem;
 }
 .mobile .footer--nav .accordeon .ac {
-  width: 100%;
+  width: calc(100% + 1rem);
   padding: 0;
 }
 .footer--nav .row {
@@ -1876,7 +1909,7 @@ header {
   font-size: 1.4rem;
 }
 .mobile .footer--nav {
-  margin-top: 2.3rem;
+  margin-top: 1.5rem;
 }
 .mobile .footer--nav .ac {
   padding-bottom: 1.6rem;
@@ -1906,6 +1939,7 @@ header {
           flex-direction: column;
   width: 69rem;
   margin: 0 auto;
+  padding-top: 4.4rem;
 }
 .mobile .object__main {
   -webkit-box-orient: vertical;
@@ -1914,6 +1948,7 @@ header {
           flex-direction: column;
   width: 51rem;
   margin: 0 auto;
+  padding-top: 5rem;
 }
 .object {
   position: relative;
@@ -1950,6 +1985,12 @@ header {
   position: relative;
   top: 0.7rem;
 }
+.tablet .object--description--heading__small {
+  padding: 1.4rem 2.3rem 1rem 3rem;
+}
+.mobile .object--description--heading__small {
+  padding: 1rem 2rem 0 1.2rem;
+}
 .object--description--heading__big {
   padding: 1.2rem 3.3rem 0.8rem 2rem;
   color: #414141;
@@ -1961,9 +2002,11 @@ header {
 }
 .tablet .object--description--heading__big {
   font-size: 3.2rem;
+  padding: 1.2rem 2.9rem 0.8rem 3rem;
 }
 .mobile .object--description--heading__big {
   font-size: 2.6rem;
+  padding: 0.8rem 1.1rem 0.8rem 1.3rem;
 }
 .object--aside {
   width: 27rem;
@@ -2013,7 +2056,7 @@ header {
 .tablet .object--aside--nav,
 .mobile .object--aside--nav {
   width: 100%;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
 }
 .object--aside--nav--item {
   color: #893b67;
@@ -2036,6 +2079,10 @@ header {
   padding-left: 2.1rem;
   width: 100%;
 }
+.tablet .object--aside--input,
+.mobile .object--aside--input {
+  padding-left: 3.2rem;
+}
 .object--aside--input__wrapper {
   position: relative;
   top: -0.6rem;
@@ -2048,18 +2095,34 @@ header {
   font-size: 1.3rem;
   cursor: pointer;
 }
+.tablet .object--aside--input__wrapper .count,
+.mobile .object--aside--input__wrapper .count {
+  right: initial;
+  left: 13rem;
+  top: 0;
+}
+.mobile .object--aside--input__wrapper .count {
+  right: initial;
+  left: 13.5rem;
+  top: -0.2rem;
+}
 .object--aside--address {
-  padding: 3.2rem 0;
+  padding: 2rem 0 0;
   border-top: 0.1rem solid #f1f1f1;
 }
-.tablet .object--aside--address:nth-child(2),
-.mobile .object--aside--address:nth-child(2) {
+.tablet .object--aside--address:nth-child(2) {
   border-right: 0.1rem solid #f1f1f1;
   padding-right: 4rem;
 }
-.tablet .object--aside--address:nth-child(3),
-.mobile .object--aside--address:nth-child(3) {
+.mobile .object--aside--address:nth-child(2) {
+  border-right: 0.1rem solid #f1f1f1;
+  padding-right: 1.3rem;
+}
+.tablet .object--aside--address:nth-child(3) {
   padding-left: 4rem;
+}
+.mobile .object--aside--address:nth-child(3) {
+  padding-left: 1.6rem;
 }
 .tablet .object--aside--address {
   width: 34.5rem;
@@ -2136,6 +2199,9 @@ header {
   font-size: 3.6rem;
   line-height: 0.6;
 }
+.mobile .object--content--heading {
+  font-size: 3.4rem;
+}
 .object--content .accordeon {
   margin-top: 4.7rem;
 }
@@ -2152,6 +2218,15 @@ header {
   width: 100%;
   background: #edeeee;
   margin-top: 8rem;
+}
+.tablet .object--feed,
+.mobile .object--feed {
+  margin-top: 6rem;
+}
+.tablet .object--feed .tag,
+.mobile .object--feed .tag {
+  position: relative;
+  top: -0.8rem;
 }
 .object--feed--wrapper {
   display: -webkit-box;
@@ -2183,6 +2258,7 @@ header {
 }
 .tablet .object--feed--item {
   width: 27rem;
+  margin-right: 3rem;
 }
 .object--feed--item--description {
   font-size: 1.4rem;
@@ -2190,7 +2266,8 @@ header {
 }
 .mobile .object--feed--item--description {
   font-size: 2.2rem;
-  margin-top: 1.8rem;
+  margin-top: 0;
+  line-height: 3rem;
 }
 select.dropdown {
   display: none;
@@ -2235,8 +2312,16 @@ select.dropdown {
   font-family: 'Vida33Pro', sans-serif;
   font-size: 1.8rem;
 }
+.tablet .faq__heading,
+.mobile .faq__heading {
+  line-height: 2.8rem;
+}
 .faq__date {
   margin-bottom: 1.7rem;
+}
+.tablet .faq__date,
+.mobile .faq__date {
+  margin-bottom: 1.8rem;
 }
 .accordeon {
   width: 100%;
@@ -2259,6 +2344,12 @@ select.dropdown {
   -o-transition: 0.5s ease-in-out all;
   transition: 0.5s ease-in-out all;
 }
+.tablet .accordeon .ac {
+  padding: 1.9rem 2.6rem 5rem 2.9rem;
+}
+.mobile .accordeon .ac {
+  padding: 2rem 2.6rem 5rem 1.4rem;
+}
 .accordeon .ac_head {
   cursor: pointer;
   border-radius: 0.8rem 0.8rem 0 0;
@@ -2269,6 +2360,11 @@ select.dropdown {
   position: absolute;
   right: 1.2rem;
   top: calc(50% - 0.2rem);
+}
+.tablet .accordeon .ac--arrow,
+.mobile .accordeon .ac--arrow {
+  right: 1rem;
+  top: calc(50% - 2.3rem);
 }
 .accordeon .ac--arrow i {
   margin-left: 0.9rem;

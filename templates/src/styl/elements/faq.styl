@@ -2,8 +2,17 @@
   &__heading
     font-family $vida33
     font-size 1.8rem
+
+    .tablet &,
+    .mobile &
+      line-height 2.8rem
+
   &__date
     margin-bottom 1.7rem
+
+    .tablet &,
+    .mobile &
+      margin-bottom 1.8rem
 
 .accordeon 
   width: 100%
@@ -20,6 +29,14 @@
     padding: 2.6rem 2.6rem 5rem 2.6rem
     border-radius: .8rem
     transition: slow
+
+    .tablet &
+      padding 1.9rem 2.6rem 5rem 2.9rem
+
+    .mobile &
+      padding 2rem 2.6rem 5rem 1.4rem
+
+
     &_head
       cursor pointer
       border-radius .8rem .8rem 0 0
@@ -29,6 +46,12 @@
       position absolute
       right 1.2rem
       top calc(50% - 0.2rem)
+
+      .tablet &,
+      .mobile &
+        right 1rem
+        top calc(50% - 2.3rem)
+
       i
         margin-left .9rem
         border: 1px solid #000
