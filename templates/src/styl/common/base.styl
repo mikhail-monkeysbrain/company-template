@@ -1,0 +1,85 @@
+
+@import "../core/variables.styl";
+
+*
+  box-sizing border-box
+  -webkit-tap-highlight-color transparent
+
+  &:before,
+  &:after
+    box-sizing border-box
+  
+  &:focus
+    outline none
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body
+  font 1.6rem/1.5 $fontPrimary
+  padding-top 9.8rem
+
+a,
+button,
+input
+  &:focus
+    outline 0
+
+a
+  color $purple
+
+[type="text/template"]
+  display none
+
+a
+  text-decoration none
+  &:focus
+    color inherit
+
+p
+  color $text
+  font-family $fontPrimary
+  font-size: 1.6rem
+  line-height 2.4rem
+
+.object__main
+  padding-top 6.4rem
+
+.tag
+  margin-left 0.5rem
+  display inline-block
+  font-size 1rem
+  line-height 2rem
+  text-transform uppercase
+  padding 0.1rem .5rem
+  font-weight 600
+  background #ffffff
+  color #000000
+  position relative
+  &__actions
+    background $extragreen
+    padding 0.1rem 1rem
+    &::after,
+    &::before
+      content: ''
+      display block
+      position absolute
+      border-style solid
+      width 0
+      height 0
+    &::after
+      right 0
+      top 0
+      border-width 1rem .5rem 1rem 0
+      border-color transparent $darkborder transparent transparent
+    &::before
+      left 0
+      top 0
+      border-width 1rem .5rem 1rem 0
+      border-color transparent $darkborder transparent transparent
+      transform: rotate(180deg)
+
+.__HTMLnoscroll
+  overflow hidden

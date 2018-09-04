@@ -1,0 +1,41 @@
+select.dropdown
+  display none
+
+.select2
+  cursor pointer
+  padding 2.2rem 0
+  border-radius 3.2rem
+  border 1px solid $border
+  position relative
+  font-size 1.4rem
+  
+
+  &-results
+    &__options
+      cursor pointer
+
+  &-search
+    display none
+
+  &-selection
+    &__arrow
+      position absolute
+      right 1.5rem
+      top 1.5rem
+      display block
+      width 0
+      height 0
+      border-style solid
+      border-width 10px 5px 0 5px
+      border-color #808080 transparent transparent transparent
+
+  &-container
+    padding-left 2.5rem
+
+  .selection,
+  .select2-selection
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%

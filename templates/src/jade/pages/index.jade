@@ -1,0 +1,12 @@
+include ../modules/_modules
++module(MODULE.DEFINE_VIEW, {title: 'Объект №51', id: 0, view: 'Index'})
+
+block content
+  .page.page--index(data-view!='<?=PAGE_JS_VIEW?>')
+    include ../blocks/object--banner
+    .container
+      .object__main
+        include ../blocks/object--aside
+        include ../blocks/object--content
+    .object__feed
+      include ../blocks/object--feed

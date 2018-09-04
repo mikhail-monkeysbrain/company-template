@@ -1,0 +1,154 @@
+@import '../core/variables.styl';
+
+.footer 
+  max-width 100%
+  width 117rem
+  margin 0 auto
+  padding-top 4rem
+  padding-bottom 4.5rem
+  display flex
+  justify-content space-between
+  
+  .tablet &
+    width 69rem
+
+  .mobile &
+    flex-direction column
+    width 51rem
+
+  &--left
+    width 21rem
+    margin-right 9.5rem
+
+    .tablet &
+      margin-right 0
+
+  &--social
+    display flex
+    width 17.1rem
+    justify-content space-between
+    align-items center
+    margin-bottom 4rem
+    margin-left 0.8rem
+    i 
+      color $purple
+      font-size: 1.8rem
+      line-height 3.1rem
+      transition: fast
+    a
+      &:hover
+        .fa-facebook-square
+          color #3b5998
+        .fa-vk
+          color #4d7198
+        .fa-instagram
+          color #fbad50
+        .fa-odnoklassniki
+          color #F2720C
+        .fa-youtube
+          color #bb0000
+
+  &--phone
+    color $darkgray
+    font-family $vida33
+    font-size 2.4rem
+    line-height 1.8rem
+    margin-bottom 1.7rem
+  
+  &--address
+    &__detail
+      color $darkgray
+      font-size: 1.4rem
+      line-height 1.8rem
+    &__link
+      font-size: 1.4rem
+      line-height 1.8rem
+
+  &--nav
+    width 87rem
+    
+    .tablet &
+      width calc(100% - 35rem)
+
+    .mobile &
+      width 100%
+
+    &--heading
+      .ac--arrow
+        display none
+
+        .mobile &
+          display block
+          i
+            border 0
+
+      .faq
+        &__heading
+          font-size 1.4rem
+    
+    .accordeon 
+      .answer
+        display block
+        padding-top .7rem
+        line-height 1.8
+
+        .mobile &
+          display none
+
+        a
+          font-style 1.4rem
+      .ac
+        border 0
+        padding-top .5rem
+        padding-bottom 0
+        width 24rem
+        
+        .tablet &
+          width 17rem
+
+        .mobile &
+          width 100%
+          padding 0
+
+    .row
+      display flex
+      flex-wrap: wrap
+
+      .mobile &
+        flex-direction column
+
+  .faq__link
+    &__no-heading
+      padding-left 3rem
+      padding-top 4rem
+
+      .mobile &
+        display none
+
+        a
+          line-height 5rem
+
+      a
+        line-height 2.4rem
+
+    a
+      font-size 1.4rem
+
+
+.mobile
+  .footer--nav
+    margin-top 2.3rem
+    .ac
+      padding-bottom 1.6rem
+      padding-top 1.6rem
+      border-bottom: 1px solid $darkborder
+      border-radius: 0
+      &--arrow
+        top calc(50% - 1.5rem)
+    .js_up
+      &.ac
+        background: transparent
+      .ac--arrow 
+        i
+          background: transparent
+          color #000000

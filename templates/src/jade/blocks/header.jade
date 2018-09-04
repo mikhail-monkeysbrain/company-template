@@ -1,0 +1,39 @@
+mixin header(data)
+
+  - data = data || {}
+
+  header
+    .header
+
+      a(href="./").logo
+        img(src="templates/build/images/base/logo.png", alt="logo")
+
+      nav.header--nav
+        a.header--nav--item(href='guide') Раздел №1
+        a.header--nav--item(href='guide') Раздел №2
+        a.header--nav--item(href='guide') Раздел №3
+        a.header--nav--item(href='guide') Раздел №4
+        a.header--nav--item(href='guide') Раздел №5
+      
+      .header--option
+        .compare
+          .compare--btn
+            .count 3
+          | Сравнение
+
+        .header--select Личный кабинет
+
+        a(href="tel:+70000000000").header--phone +7 000 000-00-00
+          .popup__toggle
+            .circlephone
+            .circle--fill
+            .img--circle
+              .img--circleblock
+
+      a.burger
+        span.line.line-1
+        span.line.line-2
+        span.line.line-3
+
+      .header__popup
+        .header__popup--inner

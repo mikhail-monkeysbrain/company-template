@@ -1,0 +1,63 @@
+mixin footer(data)
+  - data = data || {}
+  footer.footer
+    .footer--left
+      ul.footer--social
+        li
+          a(href="./")
+            i.fab.fa-facebook-square
+        li
+          a(href="./")
+            i.fab.fa-vk
+        li
+          a(href="./")
+            i.fab.fa-instagram
+        li
+          a(href="./")
+            i.fab.fa-odnoklassniki
+        li
+          a(href="./")
+            i.fab.fa-youtube
+      a(href="tel:+70000000000").footer--phone +7 000 000-00-00
+      .footer--address
+        p.footer--address__detail Адрес, улица, дом, корпус
+        a(href="mailto:post@comp.com").footer--address__link post@comp.com
+    .footer--nav
+      .accordeon.row
+        .ac.col
+          .footer--nav--heading
+            .ac--arrow
+              i.fas.fa-chevron-down
+            p.faq__heading Раздел №1
+          .answer.faq__link
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+        .ac.col
+          .footer--nav--heading
+            .ac--arrow
+              i.fas.fa-chevron-down
+            p.faq__heading Раздел №1
+          .answer.faq__link
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+        .ac.col
+          .footer--nav--heading
+            .ac--arrow
+              i.fas.fa-chevron-down
+            p.faq__heading Раздел №1
+          .answer.faq__link
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+            a(href="./") Подраздел №1
+        .faq__link.faq__link__no-heading
+          a(href="./") Подраздел №1
+          a(href="./") Подраздел №1
+          a(href="./") Подраздел №1

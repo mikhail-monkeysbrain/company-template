@@ -1,0 +1,102 @@
+.popup__toggle  
+  position relative
+  width 5.5rem
+  height 5.5rem
+  top -2.5rem
+  left -1.5rem
+
+.circlephone
+  transform-origin center
+  box-sizing content-box
+  border .2rem solid #893b67;
+  position absolute
+  left 2rem
+  top 2rem
+  width 6rem
+  height 6rem
+  border-radius 100%
+  opacity .5
+  animation circle-anim 2.4s infinite ease-in-out
+  transition all 0.5s
+
+.img
+  &--circle
+    background-color #893b67
+    transform-origin: center
+    box-sizing:content-box
+    position absolute
+    left 3.5rem
+    top 3.5rem
+    width: 3rem
+    height: 3rem
+    border-radius: 100%
+    border: .2rem solid transparent
+    opacity: .7
+  &--circleblock
+    transform-origin center
+    box-sizing content-box
+    width 3rem
+    height 3rem
+    background:url('../images/base/phone.png') center no-repeat
+    background-size: 45%
+    animation-name: tossing
+    animation-duration: 1.5s
+    animation-iteration-count: infinite
+  
+
+.circle
+  &--fill
+    transform-origin center
+    box-sizing content-box
+    background-color #893b67
+    position absolute
+    left 2.5rem
+    top 2.5rem
+    width: 5rem
+    height: 5rem
+    border-radius: 100%
+    border: .2rem solid transparent
+    animation: circle-fill-anim 2.3s infinite ease-in-out
+    transition: all 0.5s
+  
+@keyframes pulse
+  0%
+    transform scale(0.9)
+    opacity 1
+  50%
+    transform scale(1)
+    opacity 1   
+  100%
+    transform scale(0.9)
+    opacity 1
+
+@keyframes tossing
+  0%
+    transform rotate(-8deg)
+  50%
+    transform rotate(8deg)
+  100%
+    transform rotate(-8deg)
+
+
+@keyframes circle-anim
+  0%
+    transform rotate(0deg) scale(0.5) skew(1deg)
+    opacity .1
+  30%
+    transform rotate(0deg) scale(0.7) skew(1deg)
+    opacity .5
+  100%
+    transform rotate(0deg) scale(1) skew(1deg)
+    opacity .1
+
+@keyframes circle-fill-anim
+  0%
+    transform rotate(0deg) scale(0.7) skew(1deg)
+    opacity: .2
+  50%
+    transform rotate(0deg) scale(1) skew(1deg)
+    opacity: .2
+  100%
+    transform: rotate(0deg) scale(0.7) skew(1deg)
+    opacity .2

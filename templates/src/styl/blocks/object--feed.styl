@@ -1,0 +1,36 @@
+.object--feed
+  width 100%
+  background $darkborder
+  margin-top 8rem
+  &--wrapper
+    display flex
+    max-width 117rem
+    margin 0 auto
+    justify-content space-between
+    padding: 3rem 0 5rem
+
+    .tablet &
+      margin-left 7rem
+      max-width 69rem
+
+    .mobile &
+      max-width 51rem
+      position relative
+      flex-wrap: wrap
+      justify-content center
+      padding: 3rem 0 1.9rem
+      
+
+  &--item
+    width 22.1rem
+
+    .tablet &
+      width 27rem
+
+    &--description
+      font-size: 1.4rem
+      line-height 1.8rem
+
+      .mobile &
+        font-size 2.2rem
+        margin-top 1.8rem

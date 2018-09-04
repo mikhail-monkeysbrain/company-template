@@ -1,0 +1,6 @@
+include ../modules/_modules
++module(MODULE.DEFINE_VIEW, {title: 'Styleguide', id: 1, view: 'Page1'})
+
+block content
+  .page.page--page1(data-view!='<?=PAGE_JS_VIEW?>')
+    .container
